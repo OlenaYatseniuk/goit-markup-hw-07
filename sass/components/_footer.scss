@@ -138,8 +138,8 @@
     
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
-        @include transition(background-color);
-        @include transition(color);
+        transition: background-color 250ms $animation-movement,
+                color 250ms $animation-movement;
 
         &:hover,
         &:focus{

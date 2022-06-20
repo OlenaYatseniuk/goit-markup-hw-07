@@ -27,9 +27,8 @@
         color: $primary-text-color;
         background-color: #f5f4fa;
     
-        @include transition(color);
-        @include transition(background-color);
-        @include transition (box-shadow);
+        transition: background-color 250ms $animation-movement,
+                color 250ms $animation-movement, box-shadow 250ms $animation-movement;
 
         &:hover,
         &:focus{

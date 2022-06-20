@@ -55,8 +55,8 @@
         opacity: 0;
     
         transform: translateY(+100%);
-        @include transition(opacity);
-        @include transition(transform);
+        transition: opacity 250ms $animation-movement, 
+            transform 250ms $animation-movement;
 
         .projects__link:hover &,
         .projects__link:focus &{
